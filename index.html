@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Celebration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-gray-900 text-cyan-200 min-h-screen flex flex-col justify-center items-center relative"
+  >
+    <!-- Start Input Name -->
+    <div class="mb-6">
+      <label for="nameInput" class="block text-lg">Masukkan Nama:</label>
+      <input
+        type="text"
+        id="nameInput"
+        class="mt-2 p-2 rounded-lg text-gray-900"
+      />
+      <button
+        onclick="updateNameAndLaunchConfetti()"
+        class="mt-4 p-2 bg-cyan-500 text-gray-900 rounded-lg hover:bg-cyan-600 transition"
+      >
+        Submit
+      </button>
+    </div>
+    <!-- End Input Name -->
+
+    <!-- Start Heading -->
+    <h1 id="birthdayHeading" class="text-5xl font-bold mb-6 animate-bounce-in">
+      Happy Birthday!
+    </h1>
+    <!-- End Heading -->
+
+    <!-- Start Card Birthday -->
+    <div
+      class="flex flex-col lg:flex-row bg-gray-800 border-4 border-cyan-400 rounded-lg overflow-hidden w-full max-w-4xl shadow-lg"
+    >
+      <!-- Image section -->
+      <img
+        src="/assets/cake.jpg"
+        alt="Birthday Cake"
+        class="lg:w-1/4 2xl:w-1/3 h-auto object-cover"
+      />
+
+      <!-- Text section -->
+      <div class="lg:p-4 2xl:p-6 flex flex-col justify-center text-justify">
+        <p class="lg:text-base 2xl:text-lg mb-4">
+          "Selamat ulang tahun! Semoga di hari istimewa ini, segala impianmu
+          menjadi nyata, kebahagiaan selalu menyertaimu, dan kesuksesan terus
+          mengiringi langkahmu. Semoga setiap momen hari ini penuh dengan cinta,
+          tawa, dan kebahagiaan. Terima kasih telah menjadi bagian berharga
+          dalam hidup ini. Nikmati hari spesialmu dengan penuh sukacita!" 🎉🎂
+        </p>
+        <p class="lg:text-base 2xl:text-lg">
+          "Di hari ulang tahunmu ini, ingatlah bahwa setiap tantangan yang kamu
+          hadapi adalah kesempatan untuk tumbuh lebih kuat. Teruslah percaya
+          pada dirimu sendiri, karena masa depanmu penuh dengan hal-hal luar
+          biasa yang menanti!" 🎂🌟
+        </p>
+      </div>
+    </div>
+    <!-- End Card Birthday -->
+
+    <!-- Confetti container -->
+    <div id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

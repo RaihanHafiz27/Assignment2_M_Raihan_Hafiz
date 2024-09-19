@@ -1,0 +1,55 @@
+/* Custom cursor */
+body {
+  cursor: url("https://cdn-icons-png.flaticon.com/128/6794/6794503.png"), auto;
+}
+
+/* Animasi untuk elemen-elemen */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-in {
+  animation: bounceIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Confetti style */
+.confetti {
+  position: fixed;
+  top: -100px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
